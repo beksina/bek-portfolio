@@ -17,6 +17,12 @@ const Navbar = () => {
   const { colorMode, toggleColorMode } = useColorMode();
   const [display, changeDisplay] = useState("none");
 
+  // const background = colorMode === 'light' ? 'white' : 'black'
+  const scrollClick = (id) => {
+    const element = document.getElementById(id);
+    element.scrollIntoView({behavior: 'smooth'})
+  }
+
   return (
     <Fr>
       <Flex
@@ -26,6 +32,8 @@ const Navbar = () => {
         p={5}
         zIndex={10}
         position="sticky"
+        top={0}
+        backdropFilter='saturate(150%) blur(15px)'
       >
         <NextLink href="/" passHref>
           <Text
@@ -38,17 +46,19 @@ const Navbar = () => {
             {'< Bekim Sinanovic  />'}
           </Text>
         </NextLink>
-        <Box display={["none", "none", "flex", "flex"]}>
-          <Text mr={5} cursor="pointer">
-            About
-          </Text>
+        <Box display={["none", "none", "flex", "flex"]} justifyContent='space-between'>
+          <NextLink href="/#about" passHref>
+            <Text fontSize={20} mr={8} cursor="pointer" onClick={() => scrollClick("about")}>
+              About
+            </Text>
+          </NextLink>
           <NextLink href="/work" passHref>
-            <Text mr={5} cursor="pointer">
+            <Text fontSize={20} mr={8} cursor="pointer">
               Work
             </Text>
           </NextLink>
           <NextLink href="/contact" passHref>
-            <Text mr={5} cursor="pointer">
+            <Text fontSize={20} mr={6} cursor="pointer">
               Contact
             </Text>
           </NextLink>

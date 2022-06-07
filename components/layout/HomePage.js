@@ -13,6 +13,9 @@ export default function HomePage() {
       <BioHome />
       <Projects />
       <Contact />
+      <Text fontSize={12} m={5} textAlign='center'>
+        © 2022 Bekim Sinanovic. All Rights Reserved.
+      </Text>
     </Fr>
   )
 }
