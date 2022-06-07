@@ -23,7 +23,7 @@ const Navbar = () => {
         as="nav"
         w="100%"
         justifyContent="flex-end"
-        p={7}
+        p={5}
         zIndex={10}
         position="sticky"
       >
@@ -35,7 +35,7 @@ const Navbar = () => {
             left="15px"
             cursor="pointer"
           >
-            Bekim Sinanovic
+            {'< Bekim Sinanovic  />'}
           </Text>
         </NextLink>
         <Box display={["none", "none", "flex", "flex"]}>
@@ -57,6 +57,7 @@ const Navbar = () => {
           aria-label="Open Menu"
           size="lg"
           mr={5}
+          variant="ghost"
           icon={<HamburgerIcon />}
           display={["flex", "flex", "none", "none"]}
           onClick={() => changeDisplay("flex")}
