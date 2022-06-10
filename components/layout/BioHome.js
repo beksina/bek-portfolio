@@ -30,7 +30,7 @@ export default function BioHome() {
       initial="hidden"
       animate={control}
     >
-      <Flex justifyContent="center" m={20} wrap="wrap" minH="100vh" alignContent="center">
+      <Flex justifyContent="center"  wrap="wrap" minH="100vh" alignContent="center">
         <Image
           src="codingCartoon.jpeg"
           alt="me"

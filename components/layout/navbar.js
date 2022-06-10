@@ -20,8 +20,8 @@ const Navbar = () => {
   // const background = colorMode === 'light' ? 'white' : 'black'
   const scrollClick = (id) => {
     const element = document.getElementById(id);
-    element.scrollIntoView({behavior: 'smooth'})
-  }
+    element.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <Fr>
@@ -33,7 +33,7 @@ const Navbar = () => {
         zIndex={10}
         position="sticky"
         top={0}
-        backdropFilter='saturate(150%) blur(15px)'
+        backdropFilter="saturate(150%) blur(15px)"
       >
         <NextLink href="/" passHref>
           <Text
@@ -43,22 +43,30 @@ const Navbar = () => {
             left="15px"
             cursor="pointer"
           >
-            {'< Bekim Sinanovic  />'}
+            {"< Bekim Sinanovic  />"}
           </Text>
         </NextLink>
-        <Box display={["none", "none", "flex", "flex"]} justifyContent='space-between'>
-          <NextLink href="/#about" passHref>
-            <Text fontSize={20} mr={8} cursor="pointer" onClick={() => scrollClick("about")}>
+        <Box
+          display={["none", "none", "flex", "flex"]}
+          justifyContent="space-between"
+        >
+          <NextLink href="/#about" passHref  _hover={{boxShadow: '10px'}}>
+            <Text
+              fontSize={20}
+              mr={8}
+              cursor="pointer"
+              onClick={() => scrollClick("about")}
+            >
               About
             </Text>
           </NextLink>
-          <NextLink href="/work" passHref>
-            <Text fontSize={20} mr={8} cursor="pointer">
+          <NextLink href="/#projects" passHref>
+            <Text fontSize={20} mr={8} cursor="pointer" onClick={() => scrollClick("projects")}>
               Work
             </Text>
           </NextLink>
-          <NextLink href="/contact" passHref>
-            <Text fontSize={20} mr={6} cursor="pointer">
+          <NextLink href="/#contact" passHref>
+            <Text fontSize={20} mr={6} cursor="pointer" onClick={() => scrollClick("contact")}>
               Contact
             </Text>
           </NextLink>

@@ -1,5 +1,5 @@
 import React, {Fragment as Fr} from 'react'
-import { Text, Image, Box, Container } from '@chakra-ui/react'
+import { Text, Image, Box, Container, Divider } from '@chakra-ui/react'
 import BioHome from './BioHome'
 import Projects from './Projects'
 import Contact from './Contact'
@@ -13,6 +13,7 @@ export default function HomePage() {
       <BioHome />
       <Projects />
       <Contact />
+      <Divider />
       <Text fontSize={12} m={5} textAlign='center'>
         © 2022 Bekim Sinanovic. All Rights Reserved.
       </Text>

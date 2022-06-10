@@ -4,9 +4,9 @@ import { FaGithub, FaLinkedin, FaEnvelopeSquare } from 'react-icons/fa'
 
 export default function Contact() {
   return (
-    <Flex direction='column' align='center' m={10}>
+    <Flex id='contact' direction='column' align='center' minH='30vh' mt={20}>
       <Heading>
-        Want to reach out to me?
+        Contact Me :)
       </Heading>
       <ButtonGroup spacing={7} mt={5}>
         <IconButton
