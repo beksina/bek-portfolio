@@ -38,9 +38,9 @@ export default function BioHome() {
           h={250}
           w={250}
         />
-        <Flex direction="column" ml={10}>
+        <Flex direction="column" m={5}>
           <Text fontWeight="bold" fontSize={30}>
-            Who I Am
+            About Me
           </Text>
           <Text fontSize={16} maxW={500}>
             A Software Engineer from New York City who loves to solve problems

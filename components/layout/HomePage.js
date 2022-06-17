@@ -9,7 +9,8 @@ import Contact from './Contact'
 export default function HomePage() {
   return (
     <Fr>
-      <Image src='coolTree.jpeg' alt='cover' w='100%' h='100%' />
+      {/* <Image src='coolTree.jpeg' alt='cover' w='100%' h='100%' /> */}
+      <Container scrollBehavior='smooth'>
       <BioHome />
       <Projects />
       <Contact />
@@ -17,6 +18,7 @@ export default function HomePage() {
       <Text fontSize={12} m={5} textAlign='center'>
         © 2022 Bekim Sinanovic. All Rights Reserved.
       </Text>
+      </Container>
     </Fr>
   )
 }

@@ -34,6 +34,8 @@ const Navbar = () => {
         position="sticky"
         top={0}
         backdropFilter="saturate(150%) blur(15px)"
+        ms='auto'
+        scrollBehavior='smooth'
       >
         <NextLink href="/" passHref>
           <Text
@@ -80,15 +82,15 @@ const Navbar = () => {
           display={["flex", "flex", "none", "none"]}
           onClick={() => changeDisplay("flex")}
         />
-        <Button onClick={toggleColorMode} variant="ghost">
+        {/* <Button onClick={toggleColorMode} variant="ghost">
           {colorMode === "light" ? <BsMoonStarsFill /> : <BsSun />}
-        </Button>
+        </Button> */}
       </Flex>
       <Flex
         w="100vw"
         bgColor={colorMode === "light" ? "gray.50" : "gray.900"}
         zIndex={20}
-        h="100vh"
+        h="45vh"
         pos="fixed"
         top="0"
         left="0"
@@ -109,7 +111,7 @@ const Navbar = () => {
           />
         </Flex>
         <Flex flexDirection="column" align="center">
-          <NextLink href="/about" passHref>
+          <NextLink href="/#about" passHref>
             <Button
               as={ChakraLink}
               variant="ghost"
@@ -120,7 +122,7 @@ const Navbar = () => {
               About
             </Button>
           </NextLink>
-          <NextLink href="/work" passHref>
+          <NextLink href="/#projects" passHref>
             <Button
               as={ChakraLink}
               variant="ghost"
@@ -131,7 +133,7 @@ const Navbar = () => {
               Work
             </Button>
           </NextLink>
-          <NextLink href="/contact" passHref>
+          <NextLink href="/#contact" passHref>
             <Button
               as={ChakraLink}
               variant="ghost"

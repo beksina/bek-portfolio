@@ -11,7 +11,7 @@ const projects = [
   {
     id: 2,
     name: 'iPear',
-    imageUrl: 'iPear.png',
+    imageUrl: 'iPear2.png',
     description: 'E-commerce application inspired by Apple\'s website and products. Demonstrates CRUD and key features such as cart, checkout and authentication.',
     link: 'https://github.com/2202-MistyRose/MistyRose-GS',
   },
