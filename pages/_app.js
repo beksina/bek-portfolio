@@ -1,6 +1,8 @@
 import Layout from '../components/layout'
 import Head from 'next/head'
 import {ChakraProvider, extendTheme, ColorModeScript} from '@chakra-ui/react'
+import '../style.css'
+// import Particle from '../components/Particle'
 
 const config = {
   initialColorMode: "light",

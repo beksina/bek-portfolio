@@ -3,7 +3,7 @@ import { Text, Image, Box, Container, Divider } from '@chakra-ui/react'
 import BioHome from './BioHome'
 import Projects from './Projects'
 import Contact from './Contact'
-
+import Particle from './Particle'
 // home page
 
 export default function HomePage() {

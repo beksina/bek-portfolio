@@ -2,8 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { Text, Box, Container, Flex } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
-import HomePage from '../components/layout/HomePage'
-import BioHome from '../components/layout/BioHome'
+// import HomePage from '../component/layout/HomePage'
+// import BioHome from '../component/layout/BioHome'
+// import Particle from '../component/layout/Particle'
+import HomePage from '../components/HomePage'
 
 const sentence = {
   hidden: {opacity: 1},
